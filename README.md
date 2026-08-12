@@ -1,109 +1,98 @@
+You're right — **Rock_s_P is a Rock Paper Scissors game**, not a weather app. Sorry about that.
 
-# 🌤️ Weather App — Real-Time Weather Information
+Here is the corrected README:
 
-A responsive and interactive **Weather Application** built with **HTML, CSS, and JavaScript**, using the **OpenWeatherMap API** to retrieve real-time weather information for different cities.
+````markdown
+# ✊ Rock Paper Scissors Game
 
-The application allows users to search for a location and view its current temperature, weather condition, humidity, wind speed, and a corresponding weather image.
+A simple and interactive **Rock Paper Scissors game** built with **HTML, CSS, and JavaScript**.
+
+The game allows the player to choose **Rock, Paper, or Scissors** and compete against the computer. The computer generates a random choice, and JavaScript determines the winner based on the classic game rules.
 
 ---
 
-## 🚀 Project Overview
+## 🎮 Game Overview
 
-This project demonstrates how a frontend web application can communicate with an external weather API and dynamically update the user interface based on real-world data.
+Rock Paper Scissors is a classic decision-based game between a player and a computer.
 
-### 🎯 Main Goal
+### Game Rules
 
-The main objective is to practice:
+```text
+Rock     beats Scissors
+Scissors beats Paper
+Paper    beats Rock
+````
 
-- 🌐 API integration
-- ⚡ Asynchronous JavaScript
-- 📡 Fetching real-time data
-- 🧠 JSON data processing
-- 🎨 Dynamic UI updates
-- 🔎 Location-based searching
-- 💻 Frontend web development
+If both the player and computer choose the same option, the round is a **Draw**.
 
 ---
 
 ## ✨ Features
 
-- 🔎 Search weather by city
-- 🌡️ Real-time temperature
-- 🌤️ Current weather condition
-- 💧 Humidity information
-- 💨 Wind-speed information
-- 🖼️ Dynamic weather images
-- ❌ Location-not-found handling
-- ⚡ Asynchronous API requests
-- 📱 Responsive interface
-- 🎨 Custom weather-themed UI
-
-The JavaScript dynamically updates temperature, description, humidity, wind speed, and the weather image based on API results. :contentReference[oaicite:1]{index=1}
+* ✊ Rock selection
+* 📄 Paper selection
+* ✂️ Scissors selection
+* 🤖 Computer opponent
+* 🎲 Random computer choice
+* 🏆 Automatic winner detection
+* 🔄 Interactive gameplay
+* ⚡ Instant result display
+* 🎨 Simple user interface
+* 📱 Responsive design
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Technology | Purpose |
-|---|---|
-| **HTML5** | Application structure |
-| **CSS3** | Styling and responsive interface |
-| **JavaScript** | Application logic |
-| **OpenWeatherMap API** | Real-time weather data |
-| **Font Awesome** | UI icons |
+| Technology     | Purpose                    |
+| -------------- | -------------------------- |
+| **HTML5**      | Game structure             |
+| **CSS3**       | Interface design           |
+| **JavaScript** | Game logic and interaction |
 
 ---
 
-## 🧠 How It Works
+## 🧠 How the Game Works
 
 ```text
-                 User
-                  │
-                  ▼
-          Enter City Name
-                  │
-                  ▼
-            Search Button
-                  │
-                  ▼
-          JavaScript Function
-                  │
-                  ▼
-        OpenWeatherMap API
-                  │
-                  ▼
-             JSON Data
-                  │
-        ┌─────────┼─────────┐
-        ▼         ▼         ▼
-   Temperature  Humidity   Wind
-        │         │         │
-        └─────────┼─────────┘
-                  ▼
-          Weather Condition
-                  │
-                  ▼
-          Dynamic UI Update
-````
-
-The application sends the searched city to the OpenWeatherMap current-weather endpoint and converts the returned temperature from Kelvin to Celsius. ([GitHub][2])
+              Player
+                 │
+                 ▼
+        Choose Rock/Paper/
+            Scissors
+                 │
+                 ▼
+        JavaScript Logic
+                 │
+                 ├──────────────┐
+                 ▼              ▼
+              Player        Computer
+               Choice          Choice
+                 │              │
+                 └──────┬───────┘
+                        ▼
+                  Compare Choices
+                        │
+            ┌───────────┼───────────┐
+            ▼           ▼           ▼
+           Win         Lose        Draw
+```
 
 ---
 
-## 🌦️ Weather Conditions
+## 🎯 Winning Logic
 
-The application dynamically changes the displayed weather image according to the returned condition.
+```text
+Rock + Scissors     → Player Wins
+Paper + Rock        → Player Wins
+Scissors + Paper    → Player Wins
 
-Supported conditions include:
+Rock + Paper        → Computer Wins
+Paper + Scissors    → Computer Wins
+Scissors + Rock     → Computer Wins
 
-* ☁️ Clouds
-* ☀️ Clear
-* 🌧️ Rain
-* 🌫️ Mist
-* ❄️ Snow
-* 🌦️ Drizzle
-
-The implementation maps these conditions to local image assets such as `download.jpg`, `download1.jpg`, `download7.jpg`, `download4.jpg`, `download5.jpg`, and `download11.jpg`. ([GitHub][2])
+Same Choice         → Draw
+```
 
 ---
 
@@ -112,40 +101,38 @@ The implementation maps these conditions to local image assets such as `download
 ```text
 Rock_s_P/
 │
-├── index.html        # Main weather application
-├── style.css         # Application styling
-├── script.js         # Weather API and application logic
+├── index.html       # Game interface
+├── style.css        # Game styling
+├── script.js        # Game logic
 │
-├── download.jpg      # Clear-weather image
-├── download1.jpg     # Cloudy-weather image
-├── download11.jpg    # Drizzle-weather image
-├── download12.jpg    # Location-not-found image
-├── download4.jpg     # Mist-weather image
-├── download5.jpg     # Snow-weather image
-├── download7.jpg     # Rain-weather image
+├── download.jpg
+├── download1.jpg
+├── download4.jpg
+├── download5.jpg
+├── download7.jpg
+├── download11.jpg
+├── download12.jpg
 │
-└── README.md         # Project documentation
+└── README.md
 ```
-
-The repository currently contains the HTML, CSS, JavaScript, and weather-image assets listed above. ([GitHub][1])
 
 ---
 
-## 💻 Getting Started
+## 💻 Run the Game
 
-### 1. Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/mdyusuf166/Rock_s_P.git
 ```
 
-### 2. Navigate to the Project
+### Navigate to the Project
 
 ```bash
 cd Rock_s_P
 ```
 
-### 3. Run the Application
+### Start the Game
 
 Open:
 
@@ -153,133 +140,80 @@ Open:
 index.html
 ```
 
-in a modern web browser.
+in your web browser.
 
-For development, you can use **VS Code Live Server**.
+No backend or additional dependencies are required.
 
 ---
 
-## 🔑 API Configuration
-
-The application uses the **OpenWeatherMap API**.
-
-The current implementation contains an API key directly inside `script.js`. ([GitHub][2])
-
-For a production project, the API key should **not be exposed in client-side JavaScript**.
-
-A safer architecture would be:
+## 🧪 Example Gameplay
 
 ```text
-Frontend
-   │
-   ▼
-Backend API
-   │
-   ▼
-OpenWeatherMap
-   │
-   ▼
-Weather Data
-   │
-   ▼
-Frontend
+Player: Rock
+Computer: Scissors
+
+Result: 🎉 You Win!
 ```
 
-This protects the API credential and allows additional validation and caching.
-
----
-
-## 📊 Weather Data
-
-The application currently displays:
-
-| Data        | Example   |
-| ----------- | --------- |
-| Temperature | `28°C`    |
-| Weather     | `Cloudy`  |
-| Humidity    | `75%`     |
-| Wind Speed  | `12 km/h` |
-
-The values are populated dynamically from the API response. ([GitHub][2])
-
----
-
-## ❌ Error Handling
-
-If the searched location cannot be found, the application displays a **"Location not found"** interface and hides the weather information section. ([GitHub][3])
+Another example:
 
 ```text
-Invalid City
-     │
-     ▼
-API Response: 404
-     │
-     ▼
-Location Not Found
-     │
-     ▼
-Display Error Interface
+Player: Paper
+Computer: Scissors
+
+Result: 🤖 Computer Wins!
+```
+
+And:
+
+```text
+Player: Rock
+Computer: Rock
+
+Result: 🤝 Draw!
 ```
 
 ---
 
-## 🧠 Learning Outcomes
+## 📚 Learning Objectives
 
 This project provides practical experience with:
 
-* HTML5
-* CSS3
-* JavaScript
+* HTML structure
+* CSS styling
+* JavaScript fundamentals
 * DOM manipulation
-* Event listeners
-* Async/Await
-* Fetch API
-* REST API integration
-* JSON data processing
-* Error handling
-* Dynamic image rendering
-* Real-time data applications
+* Event handling
+* Conditional statements
+* Random number generation
+* Functions
+* Game logic
+* User interaction
+* Frontend development
 
 ---
 
 ## 🔮 Future Improvements
 
-* [ ] Secure API key using a backend
-* [ ] Add automatic location detection
-* [ ] Add 5-day weather forecast
-* [ ] Add hourly forecast
-* [ ] Add country and city information
-* [ ] Add weather alerts
-* [ ] Add sunrise/sunset information
-* [ ] Add Celsius/Fahrenheit conversion
-* [ ] Add search-on-Enter functionality
-* [ ] Add loading animation
-* [ ] Improve API error handling
-* [ ] Add dark/light mode
-* [ ] Improve mobile responsiveness
-* [ ] Add weather history
-* [ ] Add interactive weather charts
+* [ ] Add score tracking
+* [ ] Add round counter
+* [ ] Add reset button
+* [ ] Add sound effects
+* [ ] Add animations
+* [ ] Add difficulty levels
+* [ ] Add player names
+* [ ] Add best-of-3 mode
+* [ ] Add best-of-5 mode
+* [ ] Add game history
+* [ ] Add dark mode
+* [ ] Improve mobile interface
+* [ ] Add multiplayer mode
 
 ---
 
-## 🌍 Future Vision
+## 🎯 Project Goal
 
-The project can be developed into a complete weather intelligence dashboard:
-
-```text
-                 Weather Platform
-                        │
-        ┌───────────────┼───────────────┐
-        ▼               ▼               ▼
-   Current Weather   Forecast       Weather Alerts
-        │               │               │
-        └───────────────┼───────────────┘
-                        ▼
-                 Weather Analytics
-                        │
-                        ▼
-              Interactive Dashboard
-```
+The main goal of this project is to practice **JavaScript programming and game-development fundamentals** by creating an interactive browser-based game.
 
 ---
 
@@ -289,30 +223,30 @@ The project can be developed into a complete weather intelligence dashboard:
 
 Computer Science & Engineering Student
 
-### Interests
+Interested in:
 
 * 🤖 Artificial Intelligence
 * 🧠 Machine Learning
-* 🌐 Web Development
 * 💻 Software Engineering
+* 🎮 Game Development
+* 🌐 Web Development
 * 🔬 AI Research
 * 🧬 Biomedical AI
 * ⚛️ Quantum Technology
-* 🤖 Robotics
 
 ---
 
 ## 📌 Project Status
 
-**Status:** Educational / Frontend Project
+**Status:** Completed Educational Project
 
-This project was created to learn and practice **JavaScript API integration, asynchronous programming, frontend development, and real-time data visualization**.
+A beginner-friendly browser game created for practicing **HTML, CSS, JavaScript, logic building, and interactive web development**.
 
 ---
 
 ## ⭐ Support
 
-If you find this project useful, consider giving the repository a ⭐ on GitHub.
+If you enjoy the game, consider giving the repository a ⭐ on GitHub.
 
 ---
 
@@ -321,10 +255,4 @@ If you find this project useful, consider giving the repository a ⭐ on GitHub.
 This project is developed for educational and learning purposes.
 
 ```
-
-**Important:** Your repository name `Rock_s_P` doesn't match the actual project—the code clearly identifies it as a **Weather App**. :contentReference[oaicite:8]{index=8}
 ```
-
-[1]: https://github.com/mdyusuf166/Rock_s_P.git "GitHub - mdyusuf166/Rock_s_P · GitHub"
-[2]: https://github.com/mdyusuf166/Rock_s_P/blob/main/script.js "Rock_s_P/script.js at main · mdyusuf166/Rock_s_P · GitHub"
-[3]: https://github.com/mdyusuf166/Rock_s_P/blob/main/index.html "Rock_s_P/index.html at main · mdyusuf166/Rock_s_P · GitHub"
