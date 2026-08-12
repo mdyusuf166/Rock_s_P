@@ -1,8 +1,4 @@
-You're right — **Rock_s_P is a Rock Paper Scissors game**, not a weather app. Sorry about that.
 
-Here is the corrected README:
-
-````markdown
 # ✊ Rock Paper Scissors Game
 
 A simple and interactive **Rock Paper Scissors game** built with **HTML, CSS, and JavaScript**.
